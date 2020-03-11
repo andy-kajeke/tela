@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/lable"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"/>
+        <ListView
+            android:layout_marginTop="5dp"
+            android:id="@+id/card_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:choiceMode="multipleChoice"
+            android:divider="#fff"
+            android:layout_marginBottom="5dp"
+            />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
